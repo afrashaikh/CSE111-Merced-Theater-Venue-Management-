@@ -13,10 +13,14 @@
 --    table. customer and total are customer_name and total_amount.
 -- 2. Added a view (EventFinancials) and three triggers (trg_events_after_rebook,
 --    trg_saleitems_after_insert, trg_saleitems_after_delete).
--- 3. Statements 22 and 25 each have a newer version (34 statements through 32).
+-- 3. Statements 22 and 25 each have an original and a newer version, so
+--    Statements 01 to 32 contain 34 entries.
 -- 4. Section 4 adds Statements 33 to 42: the Checkpoint 1 use case (create
 --    event and ticket types, book performers, adjust prices, sell tickets,
---    check availability, report) done with INSERT statements. 44 total.
+--    check availability, report) done with INSERT statements. That makes 42
+--    numbered statements, or 44 counting the revised versions of 22 and 25.
+-- 5. The Checkpoint 1 use cases "Submit Booking Request" and "Approve venue
+--    rental" are not modeled, because the schema has no booking-request table.
 -- ============================================================================
 
 -- ============================================================================
@@ -63,16 +67,16 @@
 -- Statement 32: Abaigael Savio: 30%, Afra Shaikh: 70%
 --
 -- SECTION 4: USE CASE WORKFLOW (INSERT-BASED)
--- Statement 33: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 34: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 35: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 36: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 37: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 38: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 39: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 40: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 41: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
--- Statement 42: Abaigael Savio: __%, Afra Shaikh: __%   (TODO: fill in)
+-- Statement 33: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 34: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 35: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 36: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 37: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 38: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 39: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 40: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 41: Abaigael Savio: 30%, Afra Shaikh: 70%
+-- Statement 42: Abaigael Savio: 30%, Afra Shaikh: 70%
 -- ============================================================================
 
 -- Ensure SQLite foreign key constraints are enforced
